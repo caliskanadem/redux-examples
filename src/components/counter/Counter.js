@@ -3,7 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 
 const Counter = () => {
   const dispatch = useDispatch();
-  const counter = useSelector((state) => state.counter);
+  // const counter = useSelector((state) => state.counter);
+  // const counter = useSelector((state) => state.count.counter);
+  const { counter } = useSelector((state) => state.count);
 
   return (
     <div className="app">
